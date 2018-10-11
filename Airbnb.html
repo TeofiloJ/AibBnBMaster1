@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css%22%3E">
+  <link rel="stylesheet" href="style.scss">
+
+  <title>Nantes - Aibbnb </title>
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="30" height="30" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" value="Nantes - Logements" aria-label="Search">
+    </form>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <form class="form-inline ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Devenez hote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">M'inscrire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+  </nav>
+
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#">Recherche</a>
+      </li>
+      <li class="breadcrumb-item active">
+        Nantes
+      </li>
+    </ol>
+  </nav>
+
+  <script>
+      function FiltreSmall() {
+        var x = document.getElementById("filtre-large");
+        if (x.style.display === "none") {
+          x.style.display = "";
+        } else {
+          x.style.display = "none";
+        }         
+    </script>
+
+
+  <div class="filtre-small container-fluid bg-light ">
+    <button onclick="FiltreSmall()"class="btn" type="button">Filtres</button>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="filtre-large col-md-2 ">
+        <p>
+          <button onclick="myFunction()" class="btn" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
+            aria-controls="multiCollapseExample1 multiCollapseExample2">Carte/Liste</button>
+        </p>
+
+        <div id="accordion">
+          <div>
+
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <i class="fas fa-arrow-right"></i> Type de logement
+              </button>
+            </h5>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div>
+                <input type="checkbox"> Logement entier
+              </div>
+              <div>
+                <input type="checkbox"> Chambre
+              </div>
+              <div>
+                <input type="checkbox"> Chambre + salon
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fas fa-arrow-right"></i> Equipements
+            </button>
+            </h5>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div>
+                <input type="checkbox"> Shampoing
+              </div>
+              <div>
+                <input type="checkbox"> Chauffage
+              </div>
+              <div>
+                <input type="checkbox"> Cheminée
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fas fa-arrow-right"></i> Installations
+            </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div>
+              <input type="checkbox"> Parking gratuit
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("googleMap");
+          if (x.style.display === "none") {
+            x.style.display = "";
+          } else {
+            x.style.display = "none";
+          }
+          var y = document.getElementById("results");
+          if (y.style.display === "none") {
+            y.style.display = "";
+          } else {
+            y.style.display = "none";
+          }
+        }         
+      </script>
+
+      <div class="col-md-10">
+        <div class="row" id="results">
+
+          <div class="col-md-3 border">
+            <a href="">
+              <img class="img-fluid" src="http://s588384080.onlinehome.fr/TocTocAgenda/assets/img/demo/property-3.jpg">
+            </a>
+          </div>
+
+          <div class=" col-md-7 border-top border-bottom" style="padding-top:10px">
+            <p>LOGEMENT ENTIER</p>
+            <h5>
+              <a href="">Studio en centre ville </a>
+            </h5>
+            <p>2
+              <img src="http://s588384080.onlinehome.fr/TocTocAgenda/assets/img/icon/bed.png">
+            </p>
+            <p>1
+              <img src="http://s588384080.onlinehome.fr/TocTocAgenda/assets/img/icon/shawer.png">
+            </p>
+            <p>1
+              <img src="http://s588384080.onlinehome.fr/TocTocAgenda/assets/img/icon/cars.png">
+            </p>
+
+          </div>
+
+
+          <div class="col-md-2 border" style="padding-top:10px">
+            <b>18€</b>
+            <p>Par nuit</p>
+            <p>Annulation gratuite</p>
+          </div>
+
+
+        </div>
+        <script>function myMap() {
+            var mapOptions = {
+              center: new google.maps.LatLng(51.5, -0.12),
+              zoom: 10,
+              mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          } </script>
+
+        <div class="row" id="googleMap" style="display:none">
+          <div class="col-md-12">
+            <div id="map" style="min-width:800;min-height:600px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+      <img onclick="myFunction()" id="local" src="localisation.png">
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

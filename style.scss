@@ -1,0 +1,36 @@
+@media (max-width: 767.98px) {
+    .filtre-large{
+        display: none;
+        background-color: black;
+        z-index: 100;
+    }
+    .filtre-small{
+        display: "";
+    }
+
+    #local{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        display: "";
+    }
+}
+
+@media (min-width: 767.99px) {
+    .filtre-large{
+        display: "";
+    }
+    .filtre-small{
+        display: none;
+    }
+    
+    #local{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+}
+
+
+    
